@@ -1,0 +1,75 @@
+openai.api_key = "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"
+
+
+
+
+   prompt = f"""
+            You are an AI strategist specializing in education, marketing, operational planning, and digital transformation. Based on the following data for the region "{region}", create a comprehensive and actionable future plan for the next year. The plan should address all relevant aspects, incorporate innovative ideas, and suggest practical steps to enhance performance across all areas. If data is incomplete or missing, make reasonable assumptions based on general trends and best practices.
+
+            Your plan should include:
+
+            1. **Marketing and Outreach**:
+                - Propose innovative campaigns tailored to the region’s unique cultural and technological landscape to boost application rates and revenue for underperforming programs.
+                - Recommend digital marketing strategies, specifying which platforms (e.g., Google Ads, Facebook, LinkedIn) are most effective for the region and identifying alternatives for restricted platforms (e.g., VKontakte for Russia).
+                - Suggest offline methods to complement digital strategies, such as community events, partnerships with schools or industries, and print media campaigns.
+                - Highlight methods to measure the impact of marketing efforts, such as tracking engagement metrics, application rates, and revenue growth.
+                - Propose leveraging influencer marketing or alumni networks for storytelling campaigns that resonate with prospective students.
+
+            2. **Program Performance**:
+                - Identify top-performing programs and outline strategies to sustain and scale their success, such as industry partnerships, enhanced faculty expertise, or innovative curricula.
+                - Recommend actions to uplift low-performing programs, including tuition fee adjustments, targeted scholarships, or new branding and visibility campaigns.
+                - Propose launching new programs or specializations in emerging fields, such as artificial intelligence, sustainability, or healthcare innovation, based on industry demand and student preferences.
+                - Assess the potential of offering hybrid or online versions of popular programs to expand access and appeal to a broader audience.
+
+            3. **Operational Efficiency**:
+                - Suggest methods to streamline the application process, such as automation of repetitive tasks, simplified documentation requirements, and enhanced application tracking systems.
+                - Recommend strategies for improving communication with prospective and current students, including personalized email campaigns and AI-driven chatbots for 24/7 assistance.
+                - Highlight opportunities to enhance student onboarding through digital tools like virtual tours, welcome portals, and mentorship programs.
+
+            4. **Regional and Nationality-Specific Insights**:
+                - Analyze application and revenue trends for specific countries and nationalities within the region, identifying high-potential demographics or underrepresented groups.
+                - Propose localized marketing campaigns that resonate with cultural preferences, including language-optimized content and region-specific messaging.
+                - Suggest scholarship or financial aid programs tailored to attract students from high-priority nationalities.
+
+            5. **Digital Transformation**:
+                - Recommend advanced technologies to enhance student engagement and operational efficiency, such as predictive analytics, CRM tools (e.g., Salesforce, HubSpot), and AI chatbots.
+                - Propose website and mobile application improvements to provide seamless navigation, visually engaging design, and user-friendly access to key information.
+                - Identify metrics for evaluating digital transformation success, such as website conversion rates, chatbot engagement, and CRM data insights.
+                - Suggest leveraging analytics tools to track real-time data on student behavior and optimize digital strategies dynamically.
+
+            6. **Future Challenges and Opportunities**:
+                - Identify upcoming challenges (e.g., regulatory changes, economic trends, increased competition) and propose proactive strategies to address them.
+                - Highlight growth opportunities, such as increasing demand for interdisciplinary studies, online education, or programs aligned with global trends (e.g., sustainability, technology).
+                - Suggest partnerships with local industries, governments, or international institutions to stay ahead of potential challenges and leverage growth opportunities.
+
+            7. **Financial Strategy**:
+                - Recommend optimized tuition fee structures that balance affordability with revenue generation, considering market demand and competition.
+                - Propose scholarship allocations and promotional discount strategies to attract high-quality applicants and underrepresented demographics.
+                - Highlight cost-saving measures or areas for increased investment that align with long-term revenue growth.
+                - Suggest methods for calculating and improving the ROI of marketing and operational campaigns.
+
+            8. **Innovation and Creativity**:
+                - Recommend creative initiatives to differentiate the region’s educational offerings, such as gamified learning experiences, interdisciplinary dual-degree programs, or entrepreneurship workshops.
+                - Suggest partnerships with international universities or local industries for joint programs, internships, or research collaborations.
+                - Highlight innovative approaches to enhance the student experience, such as sustainability-focused projects or cultural exchange programs.
+
+            9. **Community Engagement and Social Responsibility**:
+                - Propose initiatives to foster stronger ties with local communities, such as volunteering opportunities, community-driven projects, or open house events.
+                - Recommend socially responsible strategies, including scholarships for underserved communities, green campus initiatives, and diversity-focused programs.
+
+            10. **Data-Driven Decision Making**:
+                - Suggest implementing robust data collection and analytics systems to understand student preferences, program performance, and marketing campaign success.
+                - Recommend tools for real-time tracking of application metrics, website traffic, and conversion rates to enable agile decision-making.
+                - Highlight ethical considerations in data management, such as privacy compliance and transparency in data usage.
+
+            11. **Summary and Key Takeaways**:
+                - Provide a SWOT analysis (Strengths, Weaknesses, Opportunities, Threats) for the region, summarizing key insights from the plan.
+                - Outline a concise and actionable roadmap for implementing the future plan, with timelines and priorities.
+                - Recommend periodic performance reviews to ensure adaptability to changing circumstances and real-world outcomes.
+
+            Here is the available data for the region "{region}":
+
+            {summary}
+
+            If any information is missing, provide detailed recommendations based on your expertise, trends, and assumptions to ensure a complete and actionable future plan.
+        """
