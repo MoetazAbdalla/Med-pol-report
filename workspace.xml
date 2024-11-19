@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="27cecf0b-859b-4f47-8a25-a7f21dc4121d" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2nSusoyJgaZsQw7l5tbWnNY2QCI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Enrollments.executor": "Debug",
+    "Python.Home.executor": "Run",
+    "Python.Region_countries.executor": "Run",
+    "Python.Weekly-compare.executor": "Run",
+    "Python.Yearly_compare.executor": "Run",
+    "Python.app.executor": "Run",
+    "Python.cl1-performance.executor": "Run",
+    "Python.enrollment-backuo.executor": "Run",
+    "Python.excel to csv.executor": "Run",
+    "Python.region_performance.executor": "Run",
+    "Python.revenou-maping.executor": "Run",
+    "Python.revenou.executor": "Run",
+    "Python.signal-agent.executor": "Run",
+    "Python.split_sheets.executor": "Run",
+    "Python.top_reporting_dashboard.executor": "Run",
+    "Python.tryy.executor": "Run",
+    "Python.university_report.executor": "Run",
+    "Python.weekly-report.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/revenue",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Dashboard\assets" />
+      <recent name="D:\Dashboard" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PY-241.15989.155" />
+        <option value="bundled-python-sdk-babbdf50b680-7c6932dee5e4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.15989.155" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27cecf0b-859b-4f47-8a25-a7f21dc4121d" name="Changes" comment="" />
+      <created>1728979008349</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728979008349</updated>
+      <workItem from="1728979009509" duration="18756000" />
+      <workItem from="1729058464047" duration="14127000" />
+      <workItem from="1729146550698" duration="27824000" />
+      <workItem from="1729491541415" duration="28685000" />
+      <workItem from="1729840799991" duration="1946000" />
+      <workItem from="1730267994737" duration="17957000" />
+      <workItem from="1730358012505" duration="4450000" />
+      <workItem from="1730395467181" duration="430000" />
+      <workItem from="1730460721674" duration="3598000" />
+      <workItem from="1730699704838" duration="188000" />
+      <workItem from="1730699905985" duration="7686000" />
+      <workItem from="1730707994776" duration="10779000" />
+      <workItem from="1730723969363" duration="6004000" />
+      <workItem from="1730742950303" duration="1416000" />
+      <workItem from="1730786019800" duration="35425000" />
+      <workItem from="1731062474024" duration="8862000" />
+      <workItem from="1731304620037" duration="3071000" />
+      <workItem from="1731346044934" duration="316000" />
+      <workItem from="1731392346535" duration="81000" />
+      <workItem from="1731486239601" duration="1228000" />
+      <workItem from="1731487487717" duration="373000" />
+      <workItem from="1731492217568" duration="10360000" />
+      <workItem from="1731562671550" duration="20044000" />
+      <workItem from="1731591359487" duration="2165000" />
+      <workItem from="1731650657047" duration="8601000" />
+      <workItem from="1731670009443" duration="4181000" />
+      <workItem from="1731692232877" duration="950000" />
+      <workItem from="1731696096808" duration="412000" />
+      <workItem from="1731845024668" duration="5426000" />
+      <workItem from="1731911247772" duration="30629000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Dashboard$university_report.coverage" NAME="university_report Coverage Results" MODIFIED="1731658533979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Dashboard$Region_countries.coverage" NAME="Region_countries Coverage Results" MODIFIED="1731936318515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Dashboard$Weekly_compare.coverage" NAME="Weekly-compare Coverage Results" MODIFIED="1731659533490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Dashboard$tryy.coverage" NAME="tryy Coverage Results" MODIFIED="1732000167656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Dashboard$region_performance.coverage" NAME="region_performance Coverage Results" MODIFIED="1731931185060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Dashboard$excel_to_csv.coverage" NAME="excel to csv Coverage Results" MODIFIED="1729163285291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Dashboard$cl1_performance.coverage" NAME="cl1-performance Coverage Results" MODIFIED="1729492091564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Dashboard$split_sheets.coverage" NAME="split_sheets Coverage Results" MODIFIED="1730717346427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Dashboard$revenou.coverage" NAME="revenou Coverage Results" MODIFIED="1731581203073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Dashboard$Yearly_compare.coverage" NAME="Yearly_compare Coverage Results" MODIFIED="1731070577246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Dashboard$app.coverage" NAME="app Coverage Results" MODIFIED="1731937944498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Dashboard$Home.coverage" NAME="Home Coverage Results" MODIFIED="1729174295601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Dashboard$weekly_report.coverage" NAME="weekly-report Coverage Results" MODIFIED="1731659910903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Dashboard$Enrollments.coverage" NAME="Enrollments Coverage Results" MODIFIED="1732010300661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Dashboard$revenou_maping.coverage" NAME="revenou-maping Coverage Results" MODIFIED="1731938045888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Dashboard$top_reporting_dashboard.coverage" NAME="top_reporting_dashboard Coverage Results" MODIFIED="1731937837557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Dashboard$signal_agent.coverage" NAME="signal-agent Coverage Results" MODIFIED="1730965423614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Dashboard$enrollment_backuo.coverage" NAME="enrollment-backuo Coverage Results" MODIFIED="1732006037728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
