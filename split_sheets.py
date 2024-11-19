@@ -6,6 +6,8 @@ import re
 import tempfile
 import os
 
+server = app.server
+
 # Define the layout for the split sheets page
 layout = html.Div(
     style={'maxWidth': '800px', 'margin': '0 auto', 'padding': '20px'},
@@ -94,6 +96,11 @@ def register_callbacks(app):
                     for agency_name, agency_df in df.groupby(column):
                         sanitized_agency_name = re.sub(r'[\\/*?:"<>|]', "", str(agency_name))[:31]
                         agency_df.to_excel(writer, sheet_name=sanitized_agency_name, index=False)
+
+
+if __name__ == '__main__':
+    app.run_server(debug=True, host='0.0.0.0', port=8050)
+
 
             # Prepare the file for download and show a success message
             success_message = f"✅ Data has been split by '{column}'. Click to download the file."
