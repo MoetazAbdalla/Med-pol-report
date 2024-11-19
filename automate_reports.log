@@ -1,0 +1,16 @@
+2024-11-17 15:40:48,364 INFO:Job started.
+2024-11-17 15:40:49,357 ERROR:An error occurred: 'Index' object has no attribute 'apply'
+2024-11-17 15:42:32,992 INFO:Job started.
+2024-11-17 15:42:33,955 ERROR:An error occurred: ['list_fee', 'advance_fee', 'deposit', 'total_revenue', 'current_revenue']
+2024-11-17 15:43:13,479 INFO:Job started.
+2024-11-17 15:43:14,411 ERROR:An error occurred: ['list_fee', 'advance_fee', 'deposit', 'total_revenue', 'current_revenue']
+2024-11-17 15:43:53,985 INFO:Job started.
+2024-11-17 15:43:55,406 ERROR:An error occurred: ['total_revenue', 'current_revenue']
+2024-11-17 15:44:45,324 INFO:Job started.
+2024-11-17 15:44:46,661 ERROR:An error occurred: ['total_revenue', 'current_revenue']
+2024-11-17 15:47:09,616 INFO:Job started.
+2024-11-17 15:47:10,623 ERROR:An error occurred: ['list_fee', 'advance_fee', 'deposit', 'total_revenue', 'current_revenue']
+2024-11-17 15:49:30,223 INFO:Job started.
+2024-11-17 15:49:36,386 ERROR:An error occurred: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a640c23a62f3a-aa20df7eea7sm412923766b.88 - gsmtp')
+2024-11-17 15:50:37,683 INFO:Job started.
+2024-11-17 15:50:43,310 ERROR:An error occurred: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a640c23a62f3a-aa20df7f5c3sm413013366b.90 - gsmtp')

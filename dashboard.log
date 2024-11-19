@@ -1,0 +1,4 @@
+INFO:root:Data loaded successfully
+INFO:dash.dash:Dash is running on http://127.0.0.1:8050/
+
+ERROR:root:Error loading data: Unable to allocate 9.94 GiB for an array with shape (16377, 81493) and data type float64
