@@ -1,15 +1,7 @@
 from dash import dcc, html, Input, Output, dash
 import importlib.util
 import logging
-from dash_auth import BasicAuth
 
-# Username-password pairs
-USERNAME_PASSWORD_PAIRS = [
-    ['admin', 'password1'],  # Replace with your desired username and password
-]
-
-# Set up BasicAuth
-auth = BasicAuth(app, USERNAME_PASSWORD_PAIRS)
 
 # Initialize the Dash app with external stylesheets
 external_stylesheets = [
@@ -19,8 +11,6 @@ external_stylesheets = [
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets, suppress_callback_exceptions=True)
 server = app.server
 
-# Set up logging to track errors and performance issues
-logging.basicConfig(filename="app.log", level=logging.ERROR)
 
 # Function for styling sidebar menu items
 def sidebar_menu_style(active=False):
