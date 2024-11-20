@@ -37,7 +37,7 @@ def load_data(sheet_name):
         return pd.DataFrame()  # Return an empty DataFrame on error
 
 # Dashboard Layout with Tabs
-layout = html.Div([
+app.layout = html.Div([
     html.Div([
         html.H1('Istanbul MediPol University Reporting Dashboard',
                 style={'textAlign': 'center', 'color': '#007BFF'}),
