@@ -282,7 +282,6 @@ def register_callbacks(app):
 
 
 # Initialize the Dash app and register callbacks
-app = Dash(__name__)
 app.layout = layout
 register_callbacks(app)
 
