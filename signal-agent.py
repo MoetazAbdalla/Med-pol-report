@@ -2,10 +2,29 @@ from dash import dcc, html, Dash
 from dash.dependencies import Input, Output
 import pandas as pd
 import plotly.express as px
+from flask_caching import Cache
+
 
 # Load the Excel file and get all sheet names (assuming this file is present in the assets folder)
 excel_file = 'assets/Agent_data.xlsx'
 sheet_names = pd.ExcelFile(excel_file).sheet_names
+
+# Create the Dash app
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
+
+# Caching for improved performance
+cache = Cache(app.server, config={'CACHE_TYPE': 'filesystem', 'CACHE_DIR': 'cache-directory'})
+
+# Preload data and cache it
+@cache.memoize(timeout=300)  # Cache data for 5 minutes
+def load_data(sheet_name):
+    try:
+        df = pd.read_excel(excel_file, sheet_name=sheet_name)
+        return df
+    except Exception as e:
+        print(f"Error loading sheet {sheet_name}: {e}")
+        return pd.DataFrame()  # Return an empty DataFrame on error
 
 # Layout for Weekly Report
 layout = html.Div([
