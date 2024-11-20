@@ -7,7 +7,6 @@ import logging
 
 # Initialize the Dash app
 app = Dash(__name__)
-server = app.server
 
 # Set up logging for error tracking
 logging.basicConfig(filename="app.log", level=logging.DEBUG)
