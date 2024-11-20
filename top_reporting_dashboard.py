@@ -12,7 +12,6 @@ external_stylesheets = ['https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/
 
 # Initialize the Dash app
 app = Dash(__name__)
-server = app.server
 
 # Dashboard Layout with Tabs
 layout = html.Div([
