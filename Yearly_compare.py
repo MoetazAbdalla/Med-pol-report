@@ -608,12 +608,9 @@ def register_callbacks(app):
             f"Total Removed Applications: {total_removed_applications}"  # Total removed applications
         )
 
-# Register callbacks
+# Initialize the Dash app and register callbacks
+app.layout = layout
 register_callbacks(app)
 
-# Set app layout
-app.layout = layout
-
-# Run the app
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False, host='0.0.0.0', port=int(os.environ.get('PORT', 8050)))
