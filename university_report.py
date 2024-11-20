@@ -7,12 +7,8 @@ from flask_caching import Cache
 import os
 
 
-# File path for Excel
-excel_file = os.path.join(os.getcwd(), 'assets/application-list-edited.xlsx')
-
-# Check if file exists
-if not os.path.exists(excel_file):
-    raise FileNotFoundError(f"Error: File '{excel_file}' not found!")
+# Load the Excel file and get all sheet names (each sheet represents an agent)
+excel_file = 'assets/application-list-edited.xlsx'
 
 # Get sheet names
 sheet_names = pd.ExcelFile(excel_file).sheet_names
