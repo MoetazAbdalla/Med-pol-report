@@ -276,3 +276,10 @@ def register_callbacks(app):
                 performance_metric, pie_chart, top_nationality_pie_chart, top_paid_countries_pie_chart,
                 top_regions_bar_chart, performance_month_chart, top_programs_applied_pie_chart,
                 top_programs_paid_bar_chart)
+
+# Initialize the Dash app and register callbacks
+app.layout = layout
+register_callbacks(app)
+
+if __name__ == '__main__':
+    app.run_server(debug=False, host='0.0.0.0', port=int(os.environ.get('PORT', 8050)))
