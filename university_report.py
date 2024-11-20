@@ -3,17 +3,38 @@ from dash import dcc, html
 from dash.dependencies import Input, Output
 import pandas as pd
 import plotly.express as px
+from flask_caching import Cache
 
-# Load the Excel file and get all sheet names (each sheet represents an agent)
-excel_file = 'assets/application-list-edited.xlsx'
+
+# File path for Excel
+excel_file = os.path.join(os.getcwd(), 'assets/application-list-edited.xlsx')
+
+# Check if file exists
+if not os.path.exists(excel_file):
+    raise FileNotFoundError(f"Error: File '{excel_file}' not found!")
+
+# Get sheet names
 sheet_names = pd.ExcelFile(excel_file).sheet_names
 
-# Include Bootstrap CSS as an external stylesheet for styling
+# External stylesheets for Bootstrap
 external_stylesheets = ['https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css']
 
-# Create a Dash app
+# Create the Dash app
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
+
+# Caching for improved performance
+cache = Cache(app.server, config={'CACHE_TYPE': 'filesystem', 'CACHE_DIR': 'cache-directory'})
+
+# Preload data and cache it
+@cache.memoize(timeout=300)  # Cache data for 5 minutes
+def load_data(sheet_name):
+    try:
+        df = pd.read_excel(excel_file, sheet_name=sheet_name)
+        return df
+    except Exception as e:
+        print(f"Error loading sheet {sheet_name}: {e}")
+        return pd.DataFrame()  # Return an empty DataFrame on error
 
 # Dashboard Layout with Tabs
 layout = html.Div([
