@@ -10,7 +10,6 @@ external_stylesheets = [
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets, suppress_callback_exceptions=True)
 server = app.server
 
-
 # Set up logging to track errors and performance issues
 logging.basicConfig(filename="app.log", level=logging.ERROR)
 
@@ -280,11 +279,6 @@ def update_sidebar(pathname):
 
     return sidebar_links
 
-
-# Register callbacks and routes here
-@app.callback(Output('page-content', 'children'), [Input('url', 'pathname')])
-def display_page(pathname):
-    return html.Div([html.H3(f"You are viewing: {pathname}")])
 
 if __name__ == '__main__':
     app.run_server(debug=True, host='0.0.0.0', port=8050)
