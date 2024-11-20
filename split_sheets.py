@@ -102,3 +102,6 @@ def register_callbacks(app):
             return dash.no_update, success_message, dcc.send_file(output_path)
 
         return [], "Please upload a file to see column options and split sheets.", dash.no_update
+
+if __name__ == '__main__':
+    app.run_server(debug=False, host='0.0.0.0', port=int(os.environ.get('PORT', 8050)))
