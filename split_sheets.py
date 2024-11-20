@@ -97,10 +97,6 @@ def register_callbacks(app):
                         agency_df.to_excel(writer, sheet_name=sanitized_agency_name, index=False)
 
 
-if __name__ == '__main__':
-    app.run_server(debug=True, host='0.0.0.0', port=8050)
-
-
             # Prepare the file for download and show a success message
             success_message = f"✅ Data has been split by '{column}'. Click to download the file."
             return dash.no_update, success_message, dcc.send_file(output_path)
