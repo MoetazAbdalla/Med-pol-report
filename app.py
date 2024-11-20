@@ -2,15 +2,16 @@ from dash import dcc, html, Input, Output, dash
 import importlib.util
 import logging
 
-
 # Initialize the Dash app with external stylesheets
 external_stylesheets = [
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css',
     'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'
 ]
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets, suppress_callback_exceptions=True)
-server = app.server
 
+
+# Set up logging to track errors and performance issues
+logging.basicConfig(filename="app.log", level=logging.ERROR)
 
 # Function for styling sidebar menu items
 def sidebar_menu_style(active=False):
@@ -279,6 +280,10 @@ def update_sidebar(pathname):
     return sidebar_links
 
 
-# Run the app
+# Register callbacks and routes here
+@app.callback(Output('page-content', 'children'), [Input('url', 'pathname')])
+def display_page(pathname):
+    return html.Div([html.H3(f"You are viewing: {pathname}")])
+
 if __name__ == '__main__':
     app.run_server(debug=True, host='0.0.0.0', port=8050)
