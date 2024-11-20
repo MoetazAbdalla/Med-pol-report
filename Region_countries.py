@@ -3,6 +3,8 @@ import pandas as pd
 import io
 import base64
 
+server = app.server
+
 # Define regions and corresponding countries
 regions = {
     'Central & Eastern Europe': [
