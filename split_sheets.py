@@ -6,6 +6,7 @@ import re
 import tempfile
 import os
 
+server = app.server
 
 # Define the layout for the split sheets page
 layout = html.Div(
