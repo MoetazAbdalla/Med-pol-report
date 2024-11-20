@@ -284,12 +284,9 @@ def register_callbacks(app):
         decoded = base64.b64decode(data)
         return dcc.send_bytes(decoded, "modified_file.xlsx")
 
-# Register callbacks
+# Initialize the Dash app and register callbacks
+app.layout = layout
 register_callbacks(app)
 
-# Set app layout
-app.layout = layout
-
-# Run the app
-if __name__ == "__main__":
-    app.run_server(debug=True)
+if __name__ == '__main__':
+    app.run_server(debug=False, host='0.0.0.0', port=int(os.environ.get('PORT', 8050)))
