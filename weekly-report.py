@@ -3,7 +3,7 @@ from dash import dcc, html
 from dash.dependencies import Input, Output
 import pandas as pd
 import plotly.express as px
-from flask_caching import Cache
+
 
 # Load the Excel file with one sheet
 excel_file = 'assets/weekly-15-11-2024.xlsx'
@@ -14,20 +14,6 @@ external_stylesheets = ['https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/
 
 # Create a Dash app
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-server = app.server
-
-# Caching for improved performance
-cache = Cache(app.server, config={'CACHE_TYPE': 'filesystem', 'CACHE_DIR': 'cache-directory'})
-
-# Preload data and cache it
-@cache.memoize(timeout=300)  # Cache data for 5 minutes
-def load_data(sheet_name):
-    try:
-        df = pd.read_excel(excel_file, sheet_name=sheet_name)
-        return df
-    except Exception as e:
-        print(f"Error loading sheet {sheet_name}: {e}")
-        return pd.DataFrame()  # Return an empty DataFrame on error
 
 # Dashboard Layout with Tabs
 layout = html.Div([
@@ -356,6 +342,5 @@ def register_callbacks(app):
 app.layout = layout
 register_callbacks(app)
 
-# Run the app
 if __name__ == '__main__':
     app.run_server(debug=True)
