@@ -9,6 +9,8 @@ from difflib import get_close_matches
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
+server = app.server
+
 
 
 tuitionFees = {
