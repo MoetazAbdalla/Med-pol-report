@@ -283,5 +283,7 @@ def register_callbacks(app):
 app.layout = layout
 register_callbacks(app)
 
+import os
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False, host='0.0.0.0', port=int(os.environ.get('PORT', 8050)))
+
