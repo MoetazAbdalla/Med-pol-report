@@ -1,6 +1,15 @@
 from dash import dcc, html, Input, Output, dash
 import importlib.util
 import logging
+from dash_auth import BasicAuth
+
+# Username-password pairs
+USERNAME_PASSWORD_PAIRS = [
+    ['admin', 'password1'],  # Replace with your desired username and password
+]
+
+# Set up BasicAuth
+auth = BasicAuth(app, USERNAME_PASSWORD_PAIRS)
 
 # Initialize the Dash app with external stylesheets
 external_stylesheets = [
