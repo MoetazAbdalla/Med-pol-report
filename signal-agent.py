@@ -2,7 +2,6 @@ from dash import dcc, html, Dash
 from dash.dependencies import Input, Output
 import pandas as pd
 import plotly.express as px
-from flask_caching import Cache
 
 
 # Load the Excel file and get all sheet names (assuming this file is present in the assets folder)
