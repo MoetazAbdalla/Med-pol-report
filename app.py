@@ -1,4 +1,4 @@
- from dash import dcc, html, Input, Output, dash
+from dash import dcc, html, Input, Output, dash
 import importlib.util
 import logging
 
