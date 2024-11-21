@@ -1,4 +1,4 @@
-from dash import dcc, html, Input, Output, dash
+ from dash import dcc, html, Input, Output, dash
 import importlib.util
 import logging
 
@@ -278,11 +278,8 @@ def update_sidebar(pathname):
         ))
 
     return sidebar_links
-    
-# Register callbacks and routes here
-@app.callback(Output('page-content', 'children'), [Input('url', 'pathname')])
-def display_page(pathname):
-    return html.Div([html.H3(f"You are viewing: {pathname}")])
 
+
+# Run the app
 if __name__ == '__main__':
     app.run_server(debug=True, host='0.0.0.0', port=8050)
