@@ -2,17 +2,10 @@ from dash import dcc, html, Dash
 from dash.dependencies import Input, Output
 import pandas as pd
 import plotly.express as px
-import dash
-
 
 # Load the Excel file and get all sheet names (assuming this file is present in the assets folder)
 excel_file = 'assets/Agent_data.xlsx'
 sheet_names = pd.ExcelFile(excel_file).sheet_names
-
-# Create the Dash app
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-server = app.server
-
 
 # Layout for Weekly Report
 layout = html.Div([
@@ -282,9 +275,9 @@ def register_callbacks(app):
 
 
 # Initialize the Dash app and register callbacks
+app = Dash(__name__)
 app.layout = layout
 register_callbacks(app)
 
 if __name__ == '__main__':
     app.run_server(debug=True)
-
