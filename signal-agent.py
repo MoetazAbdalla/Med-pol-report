@@ -7,6 +7,13 @@ import plotly.express as px
 excel_file = 'assets/Agent_data.xlsx'
 sheet_names = pd.ExcelFile(excel_file).sheet_names
 
+# Include Bootstrap CSS as an external stylesheet for styling
+external_stylesheets = ['https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css']
+
+# Create a Dash app
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
+
 # Layout for Weekly Report
 layout = html.Div([
     html.H1('Istanbul MediPol University Agent Reporting Dashboard',
@@ -275,7 +282,6 @@ def register_callbacks(app):
 
 
 # Initialize the Dash app and register callbacks
-app = Dash(__name__)
 app.layout = layout
 register_callbacks(app)
 
