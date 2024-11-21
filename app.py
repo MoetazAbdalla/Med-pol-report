@@ -8,7 +8,7 @@ external_stylesheets = [
     'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'
 ]
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets, suppress_callback_exceptions=True)
-server = app.server
+
 
 # Set up logging to track errors and performance issues
 logging.basicConfig(filename="app.log", level=logging.ERROR)
