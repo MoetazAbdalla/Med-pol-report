@@ -2,6 +2,7 @@ from dash import dcc, html, Dash
 from dash.dependencies import Input, Output
 import pandas as pd
 import plotly.express as px
+import dash
 
 
 # Load the Excel file and get all sheet names (assuming this file is present in the assets folder)
